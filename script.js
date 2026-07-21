@@ -34,7 +34,7 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-document.querySelectorAll('.service-card, .gallery-item, .stat').forEach(el => {
+document.querySelectorAll('.service-card, .gallery-item, .stat, .testimonial-card, .pricing-card').forEach(el => {
     observer.observe(el);
 });
 
