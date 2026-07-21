@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prairie Climatics Environmental - Soil & Water Testing</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
-            <div class="logo">Prairie Climatics Environmental</div>
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Prairie Climatics Environmental Logo" class="logo-image">
+                <span class="logo-text">Prairie Climatics Environmental</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -20,11 +25,11 @@
     </nav>
 
     <section id="home" class="hero">
-        <div class="container">
-            <h1>Prairie Climatics Environmental</h1>
-            <p>Professional Soil & Water Testing for Saskatchewan Farmers</p>
-            <p class="subtitle">Maximize yields. Ensure water safety. Monitor contamination.</p>
-            <a href="#services" class="cta-button">Learn More</a>
+        <div class="hero-content">
+            <h1>Professional Environmental Sampling</h1>
+            <p>Maximize yields. Ensure water safety. Monitor contamination.</p>
+            <p class="subtitle">Saskatchewan's trusted soil & water testing experts</p>
+            <a href="#services" class="cta-button">Our Services</a>
         </div>
     </section>
 
@@ -33,18 +38,22 @@
             <h2>Our Services</h2>
             <div class="services-grid">
                 <div class="service-card">
+                    <div class="service-icon">🌾</div>
                     <h3>Soil Sampling & Analysis</h3>
                     <p>Comprehensive soil testing to help farmers optimize fertilizer application and maximize crop yields. We analyze soil composition, nutrients, pH levels, and organic matter.</p>
                 </div>
                 <div class="service-card">
+                    <div class="service-icon">💧</div>
                     <h3>Water Testing</h3>
                     <p>Professional water quality analysis including contamination and heavy metal testing for wells, livestock drinking water, and monitoring wells.</p>
                 </div>
                 <div class="service-card">
+                    <div class="service-icon">⚗️</div>
                     <h3>Heavy Metal Analysis</h3>
                     <p>Specialized testing to detect heavy metals and contaminants in water supplies, ensuring safety for your livestock and operations.</p>
                 </div>
                 <div class="service-card">
+                    <div class="service-icon">📊</div>
                     <h3>Monitoring Wells</h3>
                     <p>Ongoing water quality monitoring for environmental compliance and contamination detection in groundwater systems.</p>
                 </div>
@@ -52,11 +61,48 @@
         </div>
     </section>
 
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Operations</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/cme45-drill-rig.jpg" alt="CME45 Drill Rig">
+                    <h3>Advanced Drilling Equipment</h3>
+                    <p>State-of-the-art CME45 drill rigs for precise soil sampling</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/soil-sampling-probe.jpg" alt="Soil Sampling with Probe">
+                    <h3>Professional Soil Sampling</h3>
+                    <p>Accurate soil collection and analysis techniques</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/team-surveying.jpg" alt="Team with Surveying Equipment">
+                    <h3>Expert Team</h3>
+                    <p>Trained professionals ensuring quality and accuracy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="about" class="about">
         <div class="container">
-            <h2>About Us</h2>
+            <h2>About Prairie Climatics Environmental</h2>
             <p>Prairie Climatics Environmental is a trusted environmental sampling business serving Saskatchewan farmers and agricultural operations. With expertise in soil and water analysis, we help farmers make data-driven decisions to improve yields while ensuring environmental safety and compliance.</p>
-            <p>Our commitment is to provide accurate, timely results that help protect your land, water, and livestock.</p>
+            <p>Our commitment is to provide accurate, timely results that help protect your land, water, and livestock. We use industry-leading equipment and methodologies to deliver comprehensive testing services.</p>
+            <div class="stats">
+                <div class="stat">
+                    <h3>100+</h3>
+                    <p>Satisfied Clients</p>
+                </div>
+                <div class="stat">
+                    <h3>500+</h3>
+                    <p>Tests Completed</p>
+                </div>
+                <div class="stat">
+                    <h3>24/7</h3>
+                    <p>Support Available</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -67,16 +113,21 @@
             <form class="contact-form">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone Number">
                 <textarea placeholder="Tell us about your sampling needs" rows="5" required></textarea>
                 <button type="submit" class="submit-button">Send Message</button>
             </form>
-            <p class="contact-info">Email: prairieclimatics@outlook.com | Location: Saskatchewan, Canada</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> info@prairieclimatics.ca</p>
+                <p><strong>Phone:</strong> (306) XXX-XXXX</p>
+                <p><strong>Location:</strong> Saskatchewan, Canada</p>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2020 Prairie Climatics Environmental. All rights reserved.</p>
+            <p>&copy; 2026 Prairie Climatics Environmental. All rights reserved.</p>
         </div>
     </footer>
 

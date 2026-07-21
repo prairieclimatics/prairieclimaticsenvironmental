@@ -18,3 +18,38 @@ document.querySelector('.contact-form').addEventListener('submit', function (e) 
     alert('Thank you for your message! We will get back to you soon.');
     this.reset();
 });
+
+// Fade in animations on scroll
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.animation = 'fadeIn 0.6s ease-in-out';
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.service-card, .gallery-item, .stat').forEach(el => {
+    observer.observe(el);
+});
+
+// Add animation
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+`;
+document.head.appendChild(style);
